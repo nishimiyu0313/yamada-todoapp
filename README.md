@@ -39,10 +39,15 @@ DBのテーブルにダミーデータを投入
 ストレージに保存したファイルを表示するためシンボリックリンクを作成
 7. php artisan storage:link
 
+Laravelサーバー起動 
+8. php artisan serve --host=0.0.0.0 --port=8000
+
+
 Nuxt (フロント) を起動
-8. docker-compose exec nuxt bash
-9. npm install
-10. npm run dev -- --host 0.0.0.0 --port 3000
+1. docker-compose exec nuxt bash
+2. npm install
+3. npm run dev -- --host 0.0.0.0 --port 3000
+※ポート番号は空いていない場合、自動で別ポート（例: 3001）に変更されることがあります
 ```
 
 ## 使用技術
